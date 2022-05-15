@@ -20,6 +20,6 @@
   "scripts": {
     "dev": "nodemon --watch './**/*.ts' --watch '../src/**/*' --exec 'ts-node' src/index.ts",
     "build": "tsc -b -f",
-    "start": "node ./build/index.js"
+    "start": "node --openssl-legacy-provider ./build/index.js"
   }
 }
