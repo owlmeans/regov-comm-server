@@ -23,10 +23,10 @@
     ky "^0.25.1"
     ky-universal "^0.8.2"
 
-"@owlmeans/regov-comm@^0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@owlmeans/regov-comm/-/regov-comm-0.2.0.tgz#0889a77d1a7576e87a7b242b855f9732096ed513"
-  integrity sha512-d9R1Cfc0Yahv/Q3NVtnZvjBuA1pxsKnLf+aGLwxd+R0FOigEYCnNMdASmIDSU3c5+dw0oVDUswNk61H+tC5+Hg==
+"@owlmeans/regov-comm@^0.2.3":
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/@owlmeans/regov-comm/-/regov-comm-0.2.3.tgz#306cd9017543fcb2ac9cbb2c749c2976c539a274"
+  integrity sha512-98uf5LAO1zBhXZHdtSshgzrJtOhdhPSNPmqzlzionFzwGm7J4exdWe2IZizZx0KlHaCYRrq+N10gHxKGk1KEDw==
   dependencies:
     "@stablelib/x25519" "^1.0.2"
     did-jwt "^6.0.0"

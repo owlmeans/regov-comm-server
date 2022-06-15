@@ -1,13 +1,13 @@
 {
   "name": "@owlmeans/regov-comm-server",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Node.js Re:gov server wallet agent for SSI",
   "main": "build/index.js",
   "author": "Igor Tkachenko",
   "license": "Apache-2.0",
   "private": true,
   "dependencies": {
-    "@owlmeans/regov-comm": "^0.2.0",
+    "@owlmeans/regov-comm": "^0.2.3",
     "@owlmeans/regov-ssi-core": "^0.6.4",
     "dotenv": "^16.0.0"
   },
