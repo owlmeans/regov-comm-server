@@ -15,18 +15,14 @@
  */
 
  import "dotenv"
- import https from 'https'
- import fs from 'fs'
+ import http from 'http'
  import { startWSServer } from '@owlmeans/regov-comm'
  
  import util from 'util'
  util.inspect.defaultOptions.depth = 8
  
  
- const httpServer = https.createServer({
-  key: fs.readFileSync(process.env.SSL_KEY as string),
-  cert: fs.readFileSync(process.env.SSL_CERT as string)
- },(_, response) => {
+ const httpServer = http.createServer((_, response) => {
    response.writeHead(404)
    response.end()
  })
@@ -43,8 +39,8 @@
    }
  })
  
- const port = process.env.SERVER_WS_PORT || '443'
- httpServer.listen(parseInt(port), () => {
+ const port = process.env.SERVER_WS_PORT || '80'
+ httpServer.listen(parseInt(port), "localhost", () => {
    console.log('Server is listening on port: ' + port)
  })
  
