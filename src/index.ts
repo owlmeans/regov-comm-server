@@ -17,6 +17,8 @@
  import "dotenv"
  import http from 'http'
  import { startWSServer } from '@owlmeans/regov-comm'
+
+ import './warmup'
  
  import util from 'util'
  util.inspect.defaultOptions.depth = 8
