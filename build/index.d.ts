@@ -14,4 +14,5 @@
  *  limitations under the License.
  */
 import "dotenv";
+import './warmup';
 //# sourceMappingURL=index.d.ts.map

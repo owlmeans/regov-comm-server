@@ -23,20 +23,20 @@
     ky "^0.25.1"
     ky-universal "^0.8.2"
 
-"@owlmeans/regov-comm@^0.2.7":
-  version "0.2.7"
-  resolved "https://registry.yarnpkg.com/@owlmeans/regov-comm/-/regov-comm-0.2.7.tgz#bc83132410a50dd14fc499f41427b86d0bb15a57"
-  integrity sha512-a95LK4sYyM2ikBl+Lk8wcU40mun/tm2iGBBfUoN27l0S/LN/aIAT8dtIrfipZ78IPsjrcqfOxqHnR02gmZQ4og==
+"@owlmeans/regov-comm@^0.2.9":
+  version "0.2.9"
+  resolved "https://registry.yarnpkg.com/@owlmeans/regov-comm/-/regov-comm-0.2.9.tgz#404705d436e7e355ba2e00a0685b1acee3e7fdd8"
+  integrity sha512-D9RroVeQxENFVaX/+pLC2UmxZ1lJILh+NFov1W1O/klwXpzJCou9Fvfa73OQ1CMLMplmnCBu1opMCePo6K8vxw==
   dependencies:
     "@stablelib/x25519" "^1.0.2"
     did-jwt "^6.0.0"
     did-resolver "^3.1.5"
     websocket "^1.0.34"
 
-"@owlmeans/regov-ssi-core@^0.6.7":
-  version "0.6.7"
-  resolved "https://registry.yarnpkg.com/@owlmeans/regov-ssi-core/-/regov-ssi-core-0.6.7.tgz#403986a19057fdb9e0f0edec4b1dff9e172de7b9"
-  integrity sha512-sk6HhfVTvPEH9G+Mn3CHvC4FRf/xOn//GJgtXq8aw7Cjxm1UG4kBAZxbHqT5DNS+Gl4OxfvFP8WDIDz+ucq5aw==
+"@owlmeans/regov-ssi-core@^0.6.9":
+  version "0.6.9"
+  resolved "https://registry.yarnpkg.com/@owlmeans/regov-ssi-core/-/regov-ssi-core-0.6.9.tgz#f2bbb4e0efb8407c967f94902050589685f5a842"
+  integrity sha512-DzVABIOhRYvXXFe4lxObHFcZC7hJfF1oLbnq0cNSUMAvxJZZEDofj0zHZtbdlZVvSTRc5g70B7N9Ig/geec0ag==
   dependencies:
     "@owlmeans/tiny-lds-ecdsa-secp256k1-2019" "^1.0.3"
     ajv "^8.8.2"

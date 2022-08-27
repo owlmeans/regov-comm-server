@@ -21,6 +21,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 require("dotenv");
 const http_1 = __importDefault(require("http"));
 const regov_comm_1 = require("@owlmeans/regov-comm");
+require("./warmup");
 const util_1 = __importDefault(require("util"));
 util_1.default.inspect.defaultOptions.depth = 8;
 const httpServer = http_1.default.createServer((_, response) => {
