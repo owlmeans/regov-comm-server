@@ -1,6 +1,6 @@
 {
   "name": "@owlmeans/regov-comm-server",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Node.js Re:gov server wallet agent for SSI",
   "main": "build/index.js",
   "author": "Igor Tkachenko",
