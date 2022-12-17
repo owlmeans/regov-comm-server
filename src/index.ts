@@ -14,35 +14,48 @@
  *  limitations under the License.
  */
 
- import "dotenv"
- import http from 'http'
- import { startWSServer } from '@owlmeans/regov-comm'
+import "dotenv"
+import http from 'http'
+import { buildExtensionRegistry } from "@owlmeans/regov-ssi-core"
+import { buildIdentityExtension } from "@owlmeans/regov-ext-identity/dist/ext"
+import { startWSServer } from '@owlmeans/regov-comm'
 
- import './warmup'
- 
- import util from 'util'
- util.inspect.defaultOptions.depth = 8
- 
- 
- const httpServer = http.createServer((_, response) => {
-   response.writeHead(404)
-   response.end()
- })
- 
- startWSServer(httpServer, {
-   timeout: parseInt(process.env.RECEIVE_MESSAGE_TIMEOUT || '30'),
-   did: {
-     prefix: process.env.DID_PREFIX,
-     baseSchemaUrl: process.env.DID_SCHEMA,
-     schemaPath: process.env.DID_SCHEMA_PATH,
-   },
-   message: {
-     ttl: 2 * 24 * 3600 * 1000
-   }
- })
- 
- const port = process.env.SERVER_WS_PORT || '80'
- httpServer.listen(parseInt(port), "localhost", () => {
-   console.log('Server is listening on port: ' + port)
- })
- 
+import './warmup'
+
+import util from 'util'
+util.inspect.defaultOptions.depth = 8
+
+
+const httpServer = http.createServer((_, response) => {
+  response.writeHead(404)
+  response.end()
+})
+
+const registry = buildExtensionRegistry()
+registry.registerSync(buildIdentityExtension(
+  'RegovIdentity', { appName: 'Re:gov' },
+  {
+    name: 'OwlMeans Re:gov Identity',
+    code: 'regov-identity',
+    organization: 'OwlMeans',
+    home: 'https://owlmeans.org/',
+    schemaBaseUrl: 'https://owlmeans.org/schemas/'
+  }
+))
+
+startWSServer(httpServer, {
+  timeout: parseInt(process.env.RECEIVE_MESSAGE_TIMEOUT || '30'),
+  did: {
+    prefix: process.env.DID_PREFIX,
+    baseSchemaUrl: process.env.DID_SCHEMA,
+    schemaPath: process.env.DID_SCHEMA_PATH,
+  },
+  message: {
+    ttl: 2 * 24 * 3600 * 1000
+  }
+}, registry)
+
+const port = process.env.SERVER_WS_PORT || '80'
+httpServer.listen(parseInt(port), "localhost", () => {
+  console.log('Server is listening on port: ' + port)
+})

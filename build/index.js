@@ -20,6 +20,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 require("dotenv");
 const http_1 = __importDefault(require("http"));
+const regov_ssi_core_1 = require("@owlmeans/regov-ssi-core");
+const ext_1 = require("@owlmeans/regov-ext-identity/dist/ext");
 const regov_comm_1 = require("@owlmeans/regov-comm");
 require("./warmup");
 const util_1 = __importDefault(require("util"));
@@ -28,6 +30,14 @@ const httpServer = http_1.default.createServer((_, response) => {
     response.writeHead(404);
     response.end();
 });
+const registry = (0, regov_ssi_core_1.buildExtensionRegistry)();
+registry.registerSync((0, ext_1.buildIdentityExtension)('RegovIdentity', { appName: 'Re:gov' }, {
+    name: 'OwlMeans Re:gov Identity',
+    code: 'regov-identity',
+    organization: 'OwlMeans',
+    home: 'https://owlmeans.org/',
+    schemaBaseUrl: 'https://owlmeans.org/schemas/'
+}));
 (0, regov_comm_1.startWSServer)(httpServer, {
     timeout: parseInt(process.env.RECEIVE_MESSAGE_TIMEOUT || '30'),
     did: {
@@ -38,7 +48,7 @@ const httpServer = http_1.default.createServer((_, response) => {
     message: {
         ttl: 2 * 24 * 3600 * 1000
     }
-});
+}, registry);
 const port = process.env.SERVER_WS_PORT || '80';
 httpServer.listen(parseInt(port), "localhost", () => {
     console.log('Server is listening on port: ' + port);
