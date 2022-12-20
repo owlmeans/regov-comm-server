@@ -23,25 +23,25 @@
     ky "^0.25.1"
     ky-universal "^0.8.2"
 
-"@owlmeans/regov-comm@^0.3.1":
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/@owlmeans/regov-comm/-/regov-comm-0.3.1.tgz#78039c025dab4d349754a3935396d9279af2dfce"
-  integrity sha512-j6k0QKHQkaud6XrJY7h+oMibJbBPAWgo2XgJvfFIDsKa3pkm3Lt3e1IbHZ9AqZGbCrSkUtTSKff6AFYHIwPpHA==
+"@owlmeans/regov-comm@^0.3.2":
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/@owlmeans/regov-comm/-/regov-comm-0.3.2.tgz#50030ab4fce84f559de369f400caaf273e0b9990"
+  integrity sha512-LU4NpLgaQmGJRW9Qy9SVFlJ1VbMoOJ0KDu/BvcJQFEilcBnUMANywF05zzKTy7YBEwR7UtTqdgugexldAgvXkQ==
   dependencies:
     "@stablelib/x25519" "^1.0.2"
     did-jwt "^6.0.0"
     did-resolver "^3.1.5"
     websocket "^1.0.34"
 
-"@owlmeans/regov-ext-identity@^0.2.6":
-  version "0.2.6"
-  resolved "https://registry.yarnpkg.com/@owlmeans/regov-ext-identity/-/regov-ext-identity-0.2.6.tgz#ef3bd2a4cb08de4c387c873003b75688e43ca77b"
-  integrity sha512-nOJbci9mCIUgY5O8h5Yba4JmHlapKW9zgn0nVuchouvAYV/gjLrOfToY1hzD2KEOay/pDS836DFG514KvnZlQg==
+"@owlmeans/regov-ext-identity@^0.2.7":
+  version "0.2.7"
+  resolved "https://registry.yarnpkg.com/@owlmeans/regov-ext-identity/-/regov-ext-identity-0.2.7.tgz#4734f8bc6f17ef6ddcfe9f1126a8a9fea66fda5b"
+  integrity sha512-Zt5on+VMUNQV4mlNsVgy4cuxTeOhtqgHGBf6UwZKTasi3SZBeMopxFaDj2PWDCFnX/P1XacOVcNG0/IKmSz3AQ==
 
-"@owlmeans/regov-ssi-core@^0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@owlmeans/regov-ssi-core/-/regov-ssi-core-0.7.0.tgz#83ae98b34c21fe87ff117be2e98a64e63bf95e40"
-  integrity sha512-bs9BWYFI4qqOi/sbEa8DzA5RoOj+S3kHO6RNPjVj9a2bpZStY9xTGGHklieSrEde+KiNK333ok2ys6d6wG6IUA==
+"@owlmeans/regov-ssi-core@^0.7.1":
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/@owlmeans/regov-ssi-core/-/regov-ssi-core-0.7.1.tgz#caf875674ecfbcd295f1a518a5486650ba4734fe"
+  integrity sha512-hJE/SSkC43ljqS240eoVaz7AYhaye9ukbHOVXUIxuOWU7EIpSQ5WIHnQBGxNvMsL7VIADWKumfBHxulb7NsEpA==
   dependencies:
     "@owlmeans/tiny-lds-ecdsa-secp256k1-2019" "^1.0.3"
     ajv "^8.8.2"
