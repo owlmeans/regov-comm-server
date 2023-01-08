@@ -18,7 +18,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-require("dotenv");
+require('dotenv').config();
 const http_1 = __importDefault(require("http"));
 const regov_ssi_core_1 = require("@owlmeans/regov-ssi-core");
 const ext_1 = require("@owlmeans/regov-ext-identity/dist/ext");

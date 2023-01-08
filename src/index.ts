@@ -14,7 +14,7 @@
  *  limitations under the License.
  */
 
-import "dotenv"
+require('dotenv').config()
 import http from 'http'
 import { buildExtensionRegistry } from "@owlmeans/regov-ssi-core"
 import { buildIdentityExtension } from "@owlmeans/regov-ext-identity/dist/ext"
