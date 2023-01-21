@@ -38,10 +38,10 @@
   resolved "https://registry.yarnpkg.com/@owlmeans/regov-ext-identity/-/regov-ext-identity-0.2.9.tgz#e8b948fd205c3d8a2db58178bbe341fd5ae2a816"
   integrity sha512-oODvAltShgK8r9JRB3xqA9Y+7Af8tTqAmO2rJu1JeZHeglRU6y/kxZjZXat4JGYAs9Z83V/uB5SaLHhJeeBKVg==
 
-"@owlmeans/regov-ssi-core@^0.7.3":
-  version "0.7.3"
-  resolved "https://registry.yarnpkg.com/@owlmeans/regov-ssi-core/-/regov-ssi-core-0.7.3.tgz#204b497eebc3878b65050b894f98140e682de157"
-  integrity sha512-6cWjKV8irJX9bFPUcZBqi8Y2GvenWDwrybwtwQOU2PkmJ1ALxVighaGyrrgAmJH9oQ1F8mgqjLBX1CinUpf+eQ==
+"@owlmeans/regov-ssi-core@^0.7.4":
+  version "0.7.4"
+  resolved "https://registry.yarnpkg.com/@owlmeans/regov-ssi-core/-/regov-ssi-core-0.7.4.tgz#e6567eb34b562c47a40ba265848cdeeae165280b"
+  integrity sha512-sbgMrTPgtlS89Zf1xnDobIur46vyBsFrWN+XqYVUbvtE+DyfnMCQ7AuBPASW5QZvwLy9wkgC4Qysxf8NZpUSyg==
   dependencies:
     "@owlmeans/tiny-lds-ecdsa-secp256k1-2019" "^1.1.0"
     ajv "^8.8.2"
