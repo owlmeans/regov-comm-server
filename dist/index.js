@@ -1,4 +1,3 @@
-"use strict";
 /**
  *  Copyright 2022 OwlMeans
  *
@@ -14,31 +13,27 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", { value: true });
 require('dotenv').config();
-const http_1 = __importDefault(require("http"));
-const regov_ssi_core_1 = require("@owlmeans/regov-ssi-core");
-const ext_1 = require("@owlmeans/regov-ext-identity/dist/ext");
-const regov_comm_1 = require("@owlmeans/regov-comm");
-require("./warmup");
-const util_1 = __importDefault(require("util"));
-util_1.default.inspect.defaultOptions.depth = 8;
-const httpServer = http_1.default.createServer((_, response) => {
+import http from 'http';
+import { buildExtensionRegistry } from "@owlmeans/regov-ssi-core";
+import { buildIdentityExtension } from "@owlmeans/regov-ext-identity/dist/ext";
+import { startWSServer } from '@owlmeans/regov-comm';
+import './warmup';
+import util from 'util';
+util.inspect.defaultOptions.depth = 8;
+const httpServer = http.createServer((_, response) => {
     response.writeHead(404);
     response.end();
 });
-const registry = (0, regov_ssi_core_1.buildExtensionRegistry)();
-registry.registerSync((0, ext_1.buildIdentityExtension)('RegovIdentity', { appName: 'Re:gov' }, {
+const registry = buildExtensionRegistry();
+registry.registerSync(buildIdentityExtension('RegovIdentity', { appName: 'Re:gov' }, {
     name: 'OwlMeans Re:gov Identity',
     code: 'regov-identity',
     organization: 'OwlMeans',
     home: 'https://owlmeans.org/',
     schemaBaseUrl: 'https://owlmeans.org/schemas/'
 }));
-(0, regov_comm_1.startWSServer)(httpServer, {
+startWSServer(httpServer, {
     timeout: parseInt(process.env.RECEIVE_MESSAGE_TIMEOUT || '30'),
     did: {
         prefix: process.env.DID_PREFIX,
