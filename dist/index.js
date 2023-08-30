@@ -45,7 +45,7 @@ startWSServer(httpServer, {
     }
 }, registry);
 const port = process.env.SERVER_WS_PORT || '80';
-httpServer.listen(parseInt(port), "localhost", () => {
+httpServer.listen(parseInt(port), "0.0.0.0", () => {
     console.log('Server is listening on port: ' + port);
 });
 //# sourceMappingURL=index.js.map
