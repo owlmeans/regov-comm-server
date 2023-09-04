@@ -314,25 +314,25 @@
   resolved "https://registry.yarnpkg.com/@noble/secp256k1/-/secp256k1-1.7.1.tgz#b251c70f824ce3ca7f8dc3df08d58f005cc0507c"
   integrity sha512-hOUk6AyBFmqVrv7k5WAw/LpszxVbj9gGN4JRkIX52fdFAj1UA61KXmZDvqVEm+pOyec3+fIeZB02LYa/pWOArw==
 
-"@owlmeans/regov-comm@^0.8.2":
-  version "0.8.2"
-  resolved "https://registry.yarnpkg.com/@owlmeans/regov-comm/-/regov-comm-0.8.2.tgz#409b69e6e991ec054a04c694666f0d2044488021"
-  integrity sha512-+rJKssU8i+agAGTR7QWpP75Ii7xVgs2rfFYnZPe46K/sv0cfVxttyGpmClxQI7T0CCYg5gxI6To/qtNFmgoT/A==
+"@owlmeans/regov-comm@^0.8.3":
+  version "0.8.3"
+  resolved "https://registry.yarnpkg.com/@owlmeans/regov-comm/-/regov-comm-0.8.3.tgz#0dd87ea0d1f6c7626ea8e24b2fddab72cf2e16b3"
+  integrity sha512-YaN5wrEoo3THOE+j+PmQoBtGrkuOKc4x4e3t6Ntrp2VYYjincq31+C4UeL/qLnjahTo4TORs4yubOhkSjUfIPQ==
   dependencies:
     "@stablelib/x25519" "^1.0.3"
     did-jwt "^7.2.0"
     did-resolver "^4.1.0"
     websocket "^1.0.34"
 
-"@owlmeans/regov-ext-identity@^0.8.2":
-  version "0.8.2"
-  resolved "https://registry.yarnpkg.com/@owlmeans/regov-ext-identity/-/regov-ext-identity-0.8.2.tgz#54839b761a4a148157c6c262b1dbb4e4b056d166"
-  integrity sha512-k9H8tev8dMC78PcQiPLdgnHpSiGdQFdFW1qh46w6YDcOqpAQJ+uQg5quU2tEHg5gjKo2XT5wpWoHhe54g7ltnw==
+"@owlmeans/regov-ext-identity@^0.8.3":
+  version "0.8.3"
+  resolved "https://registry.yarnpkg.com/@owlmeans/regov-ext-identity/-/regov-ext-identity-0.8.3.tgz#778b12c49536dfa144a130babceaf0e197f5b4dc"
+  integrity sha512-vfDgxKMqsCruWfyYNWsa1zFuCCxpes2Q80jMYKVw7eXM3nCGYpAOSyDXqdiHI5ZiUetBtmiADSANjCAyIG/HZg==
 
-"@owlmeans/regov-ssi-core@^0.8.2":
-  version "0.8.2"
-  resolved "https://registry.yarnpkg.com/@owlmeans/regov-ssi-core/-/regov-ssi-core-0.8.2.tgz#81ddf1ad1f80c8a545eca49f91a8eae0f5e0123a"
-  integrity sha512-1K75Zme8tGsSaiIlJXklCV0RrcaPi2HkNtc/j84GyeAEnfPg2a28XEEzrKsuLJ9G8CS9J7jzRaEVZDbSTkVewA==
+"@owlmeans/regov-ssi-core@^0.8.4":
+  version "0.8.4"
+  resolved "https://registry.yarnpkg.com/@owlmeans/regov-ssi-core/-/regov-ssi-core-0.8.4.tgz#a9af9739e769bdc6807b28208b74ab0fc91a880f"
+  integrity sha512-QzhqJVQInPYS/bv4suC3IWQOPfm5BAGt79X26+TxJXgsiHUbPiwyqOUCQj5UHP9C+E47KuoSTFN82H83CCrVyQ==
   dependencies:
     "@digitalbazaar/jws-linked-data-signature" "^3.0.0"
     ajv "^8.12.0"
