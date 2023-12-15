@@ -32,7 +32,7 @@
     "start": "node ./build/comm-serv.js",
     "dev": "npm-run-all --parallel watch:build watch:bundle watch:serve",
     "watch:build": "tsc -b -w --preserveWatchOutput --pretty",
-    "watch:bundle": "NODE_ENV=development webpack -c ./webpack/prod.config.js --watch",
-    "watch:serve": "nodemon ./build/comm-serv.js --watch ./build/**/*"
+    "watch:bundle": "NODE_ENV=development webpack -c ./webpack/dev.config.js --watch",
+    "watch:serve": "nodemon ./build/comm-serv-dev.js --watch ./build/**/*"
   }
 }
