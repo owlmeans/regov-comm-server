@@ -15,9 +15,9 @@
  */
 require('dotenv').config();
 import http from 'http';
-import { buildExtensionRegistry } from "@owlmeans/regov-ssi-core";
-import { buildIdentityExtension } from "@owlmeans/regov-ext-identity/dist/ext";
-import { startWSServer } from '@owlmeans/regov-comm';
+import { buildExtensionRegistry } from "@owlmeans/vc-core";
+import { buildIdentityExtension } from "@owlmeans/vc-ext-identity/dist/ext";
+import { startWSServer } from '@owlmeans/vc-comm';
 import './warmup';
 import util from 'util';
 util.inspect.defaultOptions.depth = 8;
@@ -26,12 +26,12 @@ const httpServer = http.createServer((_, response) => {
     response.end();
 });
 const registry = buildExtensionRegistry();
-registry.registerSync(buildIdentityExtension('RegovIdentity', { appName: 'Re:gov' }, {
-    name: 'OwlMeans Re:gov Identity',
-    code: 'regov-identity',
+registry.registerSync(buildIdentityExtension('OwlMeansIdentity', { appName: 'OwlMeans ID' }, {
+    name: 'OwlMeans Identity',
+    code: 'owlmeans-identity',
     organization: 'OwlMeans',
-    home: 'https://owlmeans.org/',
-    schemaBaseUrl: 'https://owlmeans.org/schemas/'
+    home: 'https://owlmeans.com/',
+    schemaBaseUrl: 'https://schemas.owlmeans.org'
 }));
 startWSServer(httpServer, {
     timeout: parseInt(process.env.RECEIVE_MESSAGE_TIMEOUT || '30'),
