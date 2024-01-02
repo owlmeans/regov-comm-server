@@ -10,6 +10,8 @@
     "@owlmeans/vc-comm": "^0.1.4",
     "@owlmeans/vc-core": "^0.1.4",
     "@owlmeans/vc-ext-identity": "^0.1.4",
+    "@owlmeans/vc-lib-node": "^0.1.5",
+    "@owlmeans/vc-warmup": "^0.1.5",
     "dotenv": "^16.0.3",
     "ethers": "^6.4.0",
     "i18next": "^22.5.0"

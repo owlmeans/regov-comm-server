@@ -352,6 +352,16 @@
   dependencies:
     react-router-dom-owlmeans "npm:react-router-dom@^6.11.2"
 
+"@owlmeans/vc-lib-node@^0.1.5":
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/@owlmeans/vc-lib-node/-/vc-lib-node-0.1.5.tgz#eca8b5ad93e1ba21b44962ca43d2db3a1b022d58"
+  integrity sha512-9GfpAZox3QT1qBKRQnX1lvl7lkM3hP2dtONWTpdPYt2B7dnn2WfeMJJg4CnoCOmGfwuE5SKtXv5JyOAqqPmiGg==
+
+"@owlmeans/vc-warmup@^0.1.5":
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/@owlmeans/vc-warmup/-/vc-warmup-0.1.5.tgz#1ebd8ca0e1fb4a0d5255009d3f3b5b1d31d521d6"
+  integrity sha512-Uc7tX5VQYstV2cSnMZ0YmakAu+Axevqz+gyakN3e3oIZbRYhhMHAo7rgkzbWL5YNL7Img26al6IBD/3YLTeR7w==
+
 "@remix-run/router@1.14.0":
   version "1.14.0"
   resolved "https://registry.yarnpkg.com/@remix-run/router/-/router-1.14.0.tgz#9bc39a5a3a71b81bdb310eba6def5bc3966695b7"

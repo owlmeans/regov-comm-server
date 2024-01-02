@@ -18,7 +18,8 @@ import http from 'http';
 import { buildExtensionRegistry } from "@owlmeans/vc-core";
 import { buildIdentityExtension } from "@owlmeans/vc-ext-identity/dist/ext";
 import { startWSServer } from '@owlmeans/vc-comm';
-import './warmup';
+import '@owlmeans/vc-warmup';
+import '@owlmeans/vc-lib-node/dist/loader';
 import util from 'util';
 util.inspect.defaultOptions.depth = 8;
 const httpServer = http.createServer((_, response) => {

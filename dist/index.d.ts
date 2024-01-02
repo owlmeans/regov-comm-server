@@ -13,5 +13,6 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-import './warmup';
+import '@owlmeans/vc-warmup';
+import '@owlmeans/vc-lib-node/dist/loader';
 //# sourceMappingURL=index.d.ts.map
